@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product CRUD Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="productName">ProductName:</label>
+                <input type="text" id="productName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productPrice">ProductPrice:</label>
+                <input type="number" id="productPrice" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productCategory">ProductCategory:</label>
+                <input type="text" id="productCategory" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="productDescription">ProductDescription:</label>
+                <textarea id="productDescription" class="form-control"></textarea>
+            </div>
+            <button id="addBtn" class="btn">add product</button>
+            <button id="updateBtn" class="btn" style="display: none;">update product</button>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-control" placeholder="search product">
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>index</th>
+                        <th>ProductName</th>
+                        <th>ProductPrice</th>
+                        <th>ProductCategory</th>
+                        <th>ProductDesc</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <!-- Products will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
